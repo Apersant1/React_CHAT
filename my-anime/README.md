@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+#Project was deployed on FireBase [![Coverage Status](https://coveralls.io/repos/github/ntkme/github-buttons/badge.svg?branch=main)](https://coveralls.io/github/ntkme/github-buttons?branch=main)
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
