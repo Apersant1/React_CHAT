@@ -1,4 +1,4 @@
-#Project was deployed on FireBase [![Coverage Status](https://lh3.googleusercontent.com/tE7qNqu1tahTeNJVDwAd8R2NK1-btdTl4EXE9m-7QVTX4PuJUsEPQlQlG9kwp9XhPvFa=w300)](https://myanime-5f2d0.web.app)
+#Project was deployed on FireBase [![Coverage Status](https://pbs.twimg.com/profile_images/1244221199938396161/ZO4rrw_d_bigger.jpg)](https://myanime-5f2d0.web.app)
 ##Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
