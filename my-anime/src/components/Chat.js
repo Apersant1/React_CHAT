@@ -15,10 +15,10 @@ import { Loader } from "./Loader/Loader";
 
 const Chat = () => {
   const { auth, firestore } = useContext(Context);
-  const [user] = useAuthState(auth);
-  const [value, setValue] = useState("");
+  const [user] = useAuthState(auth);// Получение данных пользователя из контекста
+  const [value, setValue] = useState(""); // Вытаскиваем значения из input'a
   const [messages, loading] = useCollectionData(
-    firestore.collection("messages").orderBy("createdAt")
+    firestore.collection("messages").orderBy("createdAt") // Обращение к firebase
   );
 
   const sendMessage = async () => {
@@ -28,8 +28,8 @@ const Chat = () => {
       photoUrl: user.photoURL,
       text: value,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-    });
-    setValue("");
+    }); // Добавляем запись в firestore
+    setValue(""); // Очищаем input
   };
 
   if (loading) {

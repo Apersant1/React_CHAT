@@ -6,7 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Context } from "../index";
 
 const Navbar = () => {
-  const { auth } = useContext(Context);
+  const { auth } = useContext(Context); // Получение данных пользователя из контекста
   const [user] = useAuthState(auth);
   return (
     <AppBar color={"secondary"} position="static">

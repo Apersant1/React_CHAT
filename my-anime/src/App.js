@@ -10,10 +10,10 @@ import { Loader } from "./components/Loader/Loader";
 
 const App = () => {
 
-  const {auth} = useContext(Context)
+  const {auth} = useContext(Context) // Получение данных пользователя из контекста
   const [user, loading, error] = useAuthState(auth)
 
-  if(loading){
+  if(loading){             // Если компонент еще загружается отрисовать лоадер
     return <Loader/>
   }
   return (

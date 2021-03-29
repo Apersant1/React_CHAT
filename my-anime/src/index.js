@@ -18,13 +18,13 @@ firebase.initializeApp({
   measurementId: "G-WD4Q61KDJ9",
 });
 
-export const Context = createContext(null);
+export const Context = createContext(null); //Создание контекста с помощью хука
 
-const auth = firebase.auth();
+const auth = firebase.auth(); 
 const firestore = firebase.firestore();
 
 ReactDOM.render(
-  <Context.Provider
+  <Context.Provider  // Прокидываем значения в Контекст
     value={{
       firebase,
       auth,
