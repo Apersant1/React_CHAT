@@ -11,7 +11,7 @@ export const Loader = () => {
         justify={"center"}
       >
         <Grid container alignItems={"center"} direction={"column"}>
-          <div class="lds-ellipsis">
+          <div className="lds-ellipsis">
             <div></div>
             <div></div>
             <div></div>

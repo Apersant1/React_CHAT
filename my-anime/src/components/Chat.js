@@ -1,15 +1,8 @@
 import React, { useContext, useState, Fragment } from "react";
 import firebase from "firebase";
 
-import {
-  Container,
-  Grid,
-  Box,
-  Button,
-  TextField,
-  Avatar,
-} from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
+import { Container, Grid, Button, TextField } from "@material-ui/core";
+
 import { Context } from "../index";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -25,7 +18,7 @@ const Chat = () => {
   );
 
   const sendMessage = async () => {
-    if (value != ""){
+    if (value !== "") {
       firestore.collection("messages").add({
         uid: user.uid,
         displayName: user.displayName,
@@ -37,16 +30,15 @@ const Chat = () => {
     }
   };
 
-  const onKeyDown = e =>{
-    if(e.code == "Enter"){
-      sendMessage()
+  const onKeyDown = (e) => {
+    if (e.code === "Enter") {
+      sendMessage();
     }
-  }
+  };
 
   if (loading) {
     return <Loader />;
   }
-
 
   if (messages < 1) {
     return (
@@ -91,7 +83,7 @@ const Chat = () => {
       <Grid
         container
         justify={"center"}
-        style={{ height: window.innerHeight - 50, marginTop: 50 }}
+        style={{ height: window.innerHeight - 100, marginTop: 50 }}
       >
         <div
           style={{
@@ -114,7 +106,7 @@ const Chat = () => {
           container
           alignItems={"flex-end"}
           direction={"column"}
-          style={{ width: "80%" }}
+          style={{ width: "80%", marginTop: "-45px" }}
         >
           <TextField
             fullWidth
@@ -131,9 +123,7 @@ const Chat = () => {
               color: "#ffffff",
               borderRadius: "80px",
             }}
-            
             onClick={sendMessage}
-            
             variant={"outlined"}
           >
             ✈
