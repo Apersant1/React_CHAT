@@ -1,8 +1,8 @@
 [![Coverage Status](https://pbs.twimg.com/profile_images/1244221199938396161/ZO4rrw_d_bigger.jpg)](https://anime-aac6e.web.app/)
 
-#Project was deployed on FireBase
+# Project was deployed on FireBase
 
-##Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
