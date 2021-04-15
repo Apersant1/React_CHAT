@@ -12,10 +12,10 @@ export const Loader = () => {
       >
         <Grid container alignItems={"center"} direction={"column"}>
           <div className="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div />
+            <div />
+            <div />
+            <div />
           </div>
         </Grid>
       </Grid>
